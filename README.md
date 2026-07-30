@@ -22,14 +22,17 @@ Daarna: http://localhost:3000
 
 ## Deploy (Coolify)
 
-Gebruik **Dockerfile** als build pack (niet Nixpacks/static `dist`):
+In je logs staat nog `Found application type: staticfile` + `COPY /app/dist` — dan staat **Is it a static site?** nog aan en wordt de project-`Dockerfile` genegeerd.
 
-- Branch: `main`
-- Base Directory: `/`
-- Port: `80`
-- Is it a static site?: **Nee** (Dockerfile handelt nginx af)
+**Snelste fix (blijf op static/Nixpacks):** Publish directory = `dist`. De repo heeft nu `package.json` + `nixpacks.toml` die `dist/` vult. Redeploy.
 
-Nixpacks faalt hier omdat Coolify `/app/dist` verwacht, terwijl dit project geen build-output heeft.
+**Of Dockerfile:**
+1. Build Pack → `Dockerfile`
+2. **Is it a static site?** → **Nee / uit** (belangrijk)
+3. Port → `80`
+4. Opslaan → Redeploy
+
+In geslaagde Dockerfile-logs mag **niet** meer staan: `Generating nixpacks` / `staticfile` / `/app/dist`.
 
 ## Structuur
 
@@ -40,9 +43,11 @@ HWTS.EU.HTML/
 ├── contact.html
 ├── css/styles.css
 ├── js/main.js
+├── Dockerfile      # Coolify optie A
+├── nixpacks.toml   # Coolify optie B (dist)
 └── images/
-    ├── gallery/     # projectfoto’s dienstenpagina
-    └── ...          # hero, logo, clients, overige
+    ├── gallery/
+    └── ...
 ```
 
-Geen database, geen build-step. Uploaden = klaar.
+Geen database. Statische HTML; `dist/` alleen voor Coolify/Nixpacks.

@@ -1,0 +1,7 @@
+{
+  "name": "hwts-eu-html",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp index.html diensten.html contact.html dist/ && cp -r css js images dist/"
+  }
+}
