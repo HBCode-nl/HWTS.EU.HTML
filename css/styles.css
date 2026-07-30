@@ -1063,16 +1063,31 @@ p {
 .site-footer {
   background: #0e141b;
   color: rgba(255, 255, 255, 0.65);
-  padding: 3rem 0 0;
+  padding: 3.25rem 0 0;
 }
 
-.footer-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding-bottom: 2.25rem;
-  flex-wrap: wrap;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 2.5rem 3rem;
+  padding-bottom: 2.5rem;
+}
+
+.site-footer h4 {
+  margin: 0 0 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-brand p {
+  margin: 1rem 0 0;
+  max-width: 22rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .footer-logo img {
@@ -1081,42 +1096,56 @@ p {
   width: auto;
 }
 
-.footer-meta {
-  text-align: right;
-}
-
-.footer-meta p {
-  margin: 0 0 0.35rem;
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
-.footer-meta a {
+.footer-list a {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.footer-meta a:hover {
+.footer-list a:hover {
   color: var(--yellow);
 }
 
 .footer-nav {
   display: flex;
-  justify-content: flex-end;
-  gap: 1.25rem;
-  margin-top: 0.85rem;
+  flex-direction: column;
+  gap: 0.55rem;
 }
 
 .footer-nav a {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-nav a:hover {
   color: var(--yellow);
+}
+
+.footer-jobs-note {
+  margin: 1.35rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.footer-jobs-note a {
+  color: var(--yellow);
+  white-space: nowrap;
+}
+
+.footer-jobs-note a:hover {
+  text-decoration: underline;
 }
 
 .footer-bottom-bar {
@@ -1154,16 +1183,20 @@ p {
   color: var(--yellow);
 }
 
-@media (max-width: 700px) {
-  .footer-main {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .footer-meta,
-  .footer-nav {
-    text-align: left;
-    justify-content: flex-start;
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 

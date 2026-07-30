@@ -8,7 +8,7 @@ Statische HTML-versie van hwts.eu — zelfde inhoud en huisstijl, zonder WordPre
 - `diensten.html` — gele CTA, tabbladen (laswerk / support) + projectgalerij
 - `contact.html` — hero “Neem Contact Op” + kantoorgegevens met iconen
 
-Footer: minimal — logo, adres/contact, navigatie + copyright.
+Footer: 3 kolommen — merk + tagline, contact, navigatie (+ vacature-regel) en copyright.
 
 ## Lokaal openen
 
