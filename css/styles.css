@@ -145,8 +145,10 @@ p {
   height: var(--nav-h);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -164,7 +166,7 @@ p {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1138,6 +1140,14 @@ a.feature-card:hover {
 
   .nav-toggle {
     display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nav {
+    justify-content: center;
   }
 
   .nav-links {
