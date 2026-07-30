@@ -30,4 +30,6 @@ HWTS.EU.HTML/
 └── images/          # hero, logo, diensten, clients, gallery
 ```
 
+Footer: 4 kolommen (Over ons, vacatures, contact + iconen, HWTS/opslagcontainer-logo’s), gele koppen en knoppen.
+
 Geen database, geen build-step. Uploaden = klaar.
