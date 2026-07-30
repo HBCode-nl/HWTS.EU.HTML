@@ -927,6 +927,8 @@ p {
 
 .contact-info {
   max-width: 36rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .contact-info h2 {
@@ -936,20 +938,28 @@ p {
   text-transform: uppercase;
 }
 
+.contact-info .rule {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact-list {
   list-style: none;
-  margin: 1.5rem 0 0;
+  margin: 1.5rem auto 0;
   padding: 0;
   display: grid;
   gap: 1.15rem;
+  justify-items: center;
 }
 
 .contact-list li {
   display: flex;
   gap: 0.9rem;
   align-items: flex-start;
+  justify-content: center;
   color: var(--ink);
   font-size: 1.05rem;
+  text-align: left;
 }
 
 .contact-icon {
