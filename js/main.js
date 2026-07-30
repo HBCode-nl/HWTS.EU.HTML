@@ -15,6 +15,26 @@
     });
   }
 
+  const header = document.querySelector(".site-header");
+  const hero = document.querySelector(".hero");
+  const logoImg = document.querySelector(".logo img");
+  if (header && hero && !header.classList.contains("is-solid")) {
+    const logoLight = logoImg?.getAttribute("src");
+    const logoDark = "images/logo.png";
+
+    const onScroll = () => {
+      const solid = window.scrollY > Math.max(80, hero.offsetHeight * 0.55);
+      header.classList.toggle("is-solid", solid);
+      header.classList.toggle("is-fixed", solid);
+      if (logoImg && logoLight) {
+        logoImg.src = solid ? logoDark : logoLight;
+      }
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
   const tabs = [...document.querySelectorAll(".dienst-tab")];
   const panels = [...document.querySelectorAll(".dienst-panel")];
   if (!tabs.length) return;
