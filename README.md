@@ -8,7 +8,7 @@ Statische HTML-versie van hwts.eu — zelfde inhoud en huisstijl, zonder WordPre
 - `diensten.html` — gele CTA, tabbladen (laswerk / support) + projectgalerij
 - `contact.html` — hero “Neem Contact Op” + kantoorgegevens met iconen
 
-Iconen: Lucide (ISC) — officiële SVG’s voor diensten, kernwaarden en hero-CTA’s.
+Footer: minimal — logo, adres/contact, navigatie + copyright.
 
 ## Lokaal openen
 
