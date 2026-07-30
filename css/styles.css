@@ -449,17 +449,62 @@ p {
 .values {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 2rem 1.5rem;
+}
+
+.value {
+  text-align: center;
+}
+
+.value-icon {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin: 0 auto 1.15rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.value-icon svg {
+  width: 2.35rem;
+  height: 2.35rem;
+}
+
+.value-icon--teal {
+  background: #5da5a5;
+}
+
+.value-icon--blue {
+  background: #516fa0;
+}
+
+.value-icon--orange {
+  background: #f37021;
+}
+
+.value-icon--green {
+  background: #99cc33;
 }
 
 .value h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.value-rule {
+  width: 2.25rem;
+  height: 2px;
+  margin: 0 auto 0.85rem;
+  border: 0;
+  background: #c8c8c8;
 }
 
 .value p {
   margin: 0;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 /* Clients */
