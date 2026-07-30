@@ -202,7 +202,7 @@ p {
 }
 
 .nav-links a:hover,
-.nav-links a[aria-current="page"] {
+.nav-links a[aria-current="page"]:not(.btn) {
   color: var(--yellow);
 }
 
@@ -211,13 +211,22 @@ p {
 }
 
 .site-header.is-solid .nav-links a:hover,
-.site-header.is-solid .nav-links a[aria-current="page"] {
+.site-header.is-solid .nav-links a[aria-current="page"]:not(.btn) {
   color: var(--yellow-deep);
 }
 
 .nav-links .btn {
   border-radius: 6px;
   padding: 0.7rem 1.2rem;
+}
+
+.nav-links .btn.btn-primary,
+.nav-links .btn.btn-primary:hover,
+.nav-links .btn.btn-primary[aria-current="page"],
+.site-header.is-solid .nav-links .btn.btn-primary,
+.site-header.is-solid .nav-links .btn.btn-primary:hover,
+.site-header.is-solid .nav-links .btn.btn-primary[aria-current="page"] {
+  color: var(--ink);
 }
 
 .nav-toggle {
