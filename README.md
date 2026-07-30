@@ -8,7 +8,7 @@ Statische HTML-versie van hwts.eu — zelfde inhoud en huisstijl, zonder WordPre
 - `diensten.html` — gele CTA, tabbladen (laswerk / support / containeropslag) + projectgalerij
 - `contact.html` — hero “Neem Contact Op” + kantoorgegevens met iconen
 
-Footer: 4 kolommen (Over ons, vacatures, contact + iconen, logo’s), gele koppen en knoppen.
+Footer: 4 kolommen (Over ons, vacatures, contact, Onderdeel van), gele strepen, outline/solid knoppen.
 
 ## Lokaal openen
 
