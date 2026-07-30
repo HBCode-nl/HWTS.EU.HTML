@@ -1134,14 +1134,19 @@ p {
 }
 
 .footer-jobs-note {
-  margin: 1.35rem 0 0.85rem;
+  margin: 1.35rem 0 0.35rem;
   font-size: 0.95rem;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.75);
 }
 
-.site-footer .btn-primary {
-  display: inline-flex;
+.footer-jobs-link {
+  color: var(--yellow);
+  font-size: 0.95rem;
+}
+
+.footer-jobs-link:hover {
+  text-decoration: underline;
 }
 
 .footer-bottom-bar {
