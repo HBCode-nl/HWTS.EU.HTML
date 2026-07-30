@@ -34,27 +34,45 @@
 
   const tabs = [...document.querySelectorAll(".dienst-tab")];
   const panels = [...document.querySelectorAll(".dienst-panel")];
-  if (!tabs.length) return;
+  if (tabs.length) {
+    const activate = (id) => {
+      tabs.forEach((tab) => {
+        const on = tab.dataset.tab === id;
+        tab.classList.toggle("is-active", on);
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      panels.forEach((panel) => {
+        const on = panel.id === `panel-${id}`;
+        panel.classList.toggle("is-active", on);
+        panel.hidden = !on;
+      });
+    };
 
-  const activate = (id) => {
     tabs.forEach((tab) => {
-      const on = tab.dataset.tab === id;
-      tab.classList.toggle("is-active", on);
-      tab.setAttribute("aria-selected", on ? "true" : "false");
+      tab.addEventListener("click", () => activate(tab.dataset.tab));
     });
-    panels.forEach((panel) => {
-      const on = panel.id === `panel-${id}`;
-      panel.classList.toggle("is-active", on);
-      panel.hidden = !on;
-    });
-  };
 
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => activate(tab.dataset.tab));
-  });
+    const hash = location.hash.replace("#", "");
+    if (hash && tabs.some((tab) => tab.dataset.tab === hash)) {
+      activate(hash);
+    }
+  }
 
-  const hash = location.hash.replace("#", "");
-  if (hash && tabs.some((tab) => tab.dataset.tab === hash)) {
-    activate(hash);
+  const revealEls = [...document.querySelectorAll(".reveal")];
+  if (revealEls.length && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+    );
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-in"));
   }
 })();
