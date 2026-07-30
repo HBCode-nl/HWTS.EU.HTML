@@ -550,9 +550,8 @@ p {
 }
 
 .feature-icon svg {
-  width: 2rem;
-  height: 2rem;
-  stroke: var(--ink);
+  width: 1.85rem;
+  height: 1.85rem;
 }
 
 .feature-card:hover .feature-icon {
