@@ -1068,7 +1068,7 @@ p {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2.5rem 3rem;
   padding-bottom: 2.5rem;
 }
@@ -1088,6 +1088,10 @@ p {
   max-width: 22rem;
   font-size: 0.95rem;
   line-height: 1.55;
+}
+
+.footer-address {
+  margin-top: 1.15rem;
 }
 
 .footer-logo img {
