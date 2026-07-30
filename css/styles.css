@@ -540,6 +540,97 @@ p {
   object-fit: cover;
 }
 
+.gallery-projects {
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-projects img {
+  aspect-ratio: 1 / 1.15;
+}
+
+/* CTA band (diensten) */
+.cta-band {
+  background: var(--yellow);
+  padding: 3.25rem 0;
+  text-align: center;
+}
+
+.cta-band h1 {
+  margin: 0 0 1.25rem;
+  color: var(--ink);
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+}
+
+.cta-band .btn-dark {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Diensten tabs layout */
+.diensten-section {
+  padding-top: 3rem;
+}
+
+.diensten-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.dienst-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.dienst-tab {
+  appearance: none;
+  border: 0;
+  margin: 0;
+  padding: 1rem 1.1rem;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: #ececec;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.dienst-tab:hover {
+  background: #e2e2e2;
+}
+
+.dienst-tab.is-active {
+  background: var(--yellow);
+}
+
+.dienst-panel[hidden] {
+  display: none;
+}
+
+.dienst-panel h2 {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.55rem, 2.4vw, 2rem);
+}
+
+.dienst-panel p {
+  margin: 0 0 1rem;
+  max-width: 52ch;
+}
+
+.dienst-panel ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.dienst-panel li {
+  margin-bottom: 0.35rem;
+}
+
 /* Split content */
 .split {
   display: grid;
@@ -790,8 +881,21 @@ p {
   .feature-grid,
   .split,
   .contact-grid,
+  .diensten-layout {
+    grid-template-columns: 1fr;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .dienst-tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dienst-tab {
+    flex: 1 1 10rem;
   }
 
   .values {

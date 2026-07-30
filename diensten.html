@@ -29,77 +29,163 @@
     </header>
 
     <main>
-      <section class="page-hero">
-        <div class="hero-media" aria-hidden="true">
-          <img src="images/laswerk.jpg" alt="" />
-        </div>
+      <section class="cta-band">
         <div class="container">
-          <span class="eyebrow" style="color: var(--yellow)">Diensten</span>
-          <h1>Hulp nodig bij uw project of klus?</h1>
+          <h1>Hulp Nodig Bij Uw Project Of Klus?</h1>
+          <a class="btn btn-dark" href="contact.html">Neem vrijblijvend contact op</a>
         </div>
       </section>
 
-      <section class="section" id="laswerk">
-        <div class="container split">
-          <div>
-            <span class="eyebrow">Laswerkzaamheden</span>
-            <h2>Gecertificeerd laswerk</h2>
-            <p>
-              HWTS werkt uitsluitend met gecertificeerde lassers om uw laswerk
-              vakkundig en professioneel uit te voeren.
-            </p>
-            <ul>
-              <li>TIG-lassen</li>
-              <li>MIG-lassen</li>
-              <li>Elektrode-lassen</li>
-            </ul>
-            <a class="btn btn-dark" href="contact.html">Neem vrijblijvend contact op</a>
+      <section class="section diensten-section">
+        <div class="container diensten-layout">
+          <div class="dienst-tabs" role="tablist" aria-label="Diensten">
+            <button
+              type="button"
+              class="dienst-tab is-active"
+              role="tab"
+              id="tab-laswerk"
+              aria-selected="true"
+              aria-controls="panel-laswerk"
+              data-tab="laswerk"
+            >
+              Laswerkzaamheden
+            </button>
+            <button
+              type="button"
+              class="dienst-tab"
+              role="tab"
+              id="tab-support"
+              aria-selected="false"
+              aria-controls="panel-support"
+              data-tab="support"
+            >
+              Technisch Support
+            </button>
+            <button
+              type="button"
+              class="dienst-tab"
+              role="tab"
+              id="tab-container"
+              aria-selected="false"
+              aria-controls="panel-container"
+              data-tab="container"
+            >
+              Containeropslag
+            </button>
           </div>
-          <div>
-            <img src="images/project-tata.jpg" alt="Laswerkzaamheden op locatie" />
-          </div>
-        </div>
-      </section>
 
-      <section class="section section-muted" id="support">
-        <div class="container split">
-          <div>
-            <img src="images/project-support.jpg" alt="Technisch support door HWTS" />
-          </div>
-          <div>
-            <span class="eyebrow">Technisch Support</span>
-            <h2>Technische ondersteuning op maat</h2>
-            <p>
-              Wij hebben genoeg ervaring en kennis in huis voor de juiste
-              technische support bij uw project.
-            </p>
-            <ul>
-              <li>Fabrieksonderhoud</li>
-              <li>Stilstand-ondersteuning</li>
-              <li>Sleutel- en snijwerkzaamheden</li>
-              <li>Montagewerk</li>
-              <li>Leidingwerk</li>
-            </ul>
-            <a class="btn btn-dark" href="contact.html">Plan een gesprek</a>
-          </div>
-        </div>
-      </section>
+          <div class="dienst-panels">
+            <div
+              class="dienst-panel is-active"
+              role="tabpanel"
+              id="panel-laswerk"
+              aria-labelledby="tab-laswerk"
+            >
+              <h2>Specialist in laswerkzaamheden</h2>
+              <p>
+                HWTS werkt uitsluitend met gecertificeerde lassers om uw laswerk
+                vakkundig en professioneel uit te kunnen voeren. Wij verzorgen:
+              </p>
+              <ul>
+                <li>TIG-lassen</li>
+                <li>MIG-lassen</li>
+                <li>Elektrode lassen</li>
+              </ul>
+              <div class="gallery gallery-projects">
+                <img src="images/gallery/project-01.jpg" alt="Laswerk project 1" />
+                <img src="images/gallery/project-02.jpg" alt="Laswerk project 2" />
+                <img src="images/gallery/project-03.jpg" alt="Laswerk project 3" />
+                <img src="images/gallery/project-04.jpg" alt="Laswerk project 4" />
+                <img src="images/gallery/project-05.jpg" alt="Laswerk project 5" />
+                <img src="images/gallery/project-06.jpg" alt="Laswerk project 6" />
+                <img src="images/gallery/project-07.jpg" alt="Laswerk project 7" />
+                <img src="images/gallery/project-08.jpg" alt="Laswerk project 8" />
+                <img src="images/gallery/project-09.jpg" alt="Laswerk project 9" />
+                <img src="images/gallery/project-10.jpg" alt="Laswerk project 10" />
+                <img src="images/gallery/project-11.jpg" alt="Laswerk project 11" />
+                <img src="images/gallery/project-12.jpg" alt="Laswerk project 12" />
+                <img src="images/gallery/project-13.jpg" alt="Laswerk project 13" />
+                <img src="images/gallery/project-14.jpg" alt="Laswerk project 14" />
+                <img src="images/gallery/project-15.jpg" alt="Laswerk project 15" />
+                <img src="images/gallery/project-16.jpg" alt="Laswerk project 16" />
+                <img src="images/gallery/project-17.jpg" alt="Laswerk project 17" />
+                <img src="images/gallery/project-18.jpg" alt="Laswerk project 18" />
+                <img src="images/gallery/project-19.jpg" alt="Laswerk project 19" />
+                <img src="images/gallery/project-20.jpg" alt="Laswerk project 20" />
+                <img src="images/gallery/project-21.jpg" alt="Laswerk project 21" />
+                <img src="images/gallery/project-22.jpg" alt="Laswerk project 22" />
+                <img src="images/gallery/project-23.jpg" alt="Laswerk project 23" />
+              </div>
+            </div>
 
-      <section class="section">
-        <div class="container section-head">
-          <span class="eyebrow">Werk in beeld</span>
-          <h2>Uit het veld</h2>
-          <hr class="rule" />
-        </div>
-        <div class="container gallery">
-          <img src="images/gallery-1.jpg" alt="HWTS projectfoto 1" />
-          <img src="images/gallery-2.jpg" alt="HWTS projectfoto 2" />
-          <img src="images/gallery-3.jpg" alt="HWTS projectfoto 3" />
-          <img src="images/gallery-4.jpg" alt="HWTS projectfoto 4" />
-          <img src="images/gallery-5.jpg" alt="HWTS projectfoto 5" />
-          <img src="images/gallery-6.jpg" alt="HWTS projectfoto 6" />
-          <img src="images/gallery-7.jpg" alt="HWTS projectfoto 7" />
-          <img src="images/gallery-8.jpg" alt="HWTS projectfoto 8" />
+            <div
+              class="dienst-panel"
+              role="tabpanel"
+              id="panel-support"
+              aria-labelledby="tab-support"
+              hidden
+            >
+              <h2>Technisch Support</h2>
+              <p>
+                Wij staan altijd klaar om de nodige ondersteuning of
+                onderhoudswerkzaamheden te verzorgen op het gebied van:
+              </p>
+              <ul>
+                <li>Fabrieksonderhoud</li>
+                <li>Stilstand Ondersteuning</li>
+                <li>Sleutel- en Snijwerkzaamheden</li>
+                <li>Montagewerk</li>
+                <li>Leidingwerk</li>
+              </ul>
+              <div class="gallery gallery-projects">
+                <img src="images/gallery/project-01.jpg" alt="Support project 1" />
+                <img src="images/gallery/project-05.jpg" alt="Support project 2" />
+                <img src="images/gallery/project-09.jpg" alt="Support project 3" />
+                <img src="images/gallery/project-14.jpg" alt="Support project 4" />
+                <img src="images/gallery/project-18.jpg" alt="Support project 5" />
+                <img src="images/gallery/project-22.jpg" alt="Support project 6" />
+                <img src="images/project-support.jpg" alt="Technisch support op locatie" />
+                <img src="images/project-sluizen.jpg" alt="Project sluizen" />
+                <img src="images/gallery/work.jpg" alt="HWTS werkzaamheden" />
+              </div>
+            </div>
+
+            <div
+              class="dienst-panel"
+              role="tabpanel"
+              id="panel-container"
+              aria-labelledby="tab-container"
+              hidden
+            >
+              <h2>Containeropslag in Velsen, Alkmaar of Oud-Gastel</h2>
+              <p>
+                Heb je snel betaalbare opslagruimte nodig voor je bedrijf of
+                privéspullen?
+              </p>
+              <p>
+                Bij ons huur je al een gloednieuwe High Cube container (8ft)
+                vanaf €&nbsp;50 (excl. BTW) per maand. Uw opslagcontainer is
+                zelfstandig toegankelijk en maandelijks opzegbaar.
+              </p>
+              <p>Keuze uit 8ft – 20ft – 40ft High Cube containers</p>
+              <p>
+                <a
+                  class="btn btn-dark"
+                  href="https://opslagcontainer.eu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Naar opslagcontainer.eu</a
+                >
+              </p>
+              <div class="gallery gallery-projects">
+                <img
+                  src="images/gallery/container-01.jpg"
+                  alt="Zeecontainer opslag Velsen"
+                />
+                <img src="images/containeropslag.jpg" alt="Containeropslag" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

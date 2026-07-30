@@ -4,9 +4,11 @@ Statische HTML-versie van hwts.eu — zelfde inhoud en huisstijl, zonder WordPre
 
 ## Pagina’s
 
-- `index.html` — home (full-screen hero, diensten, kernwaarden, opdrachtgevers)
-- `diensten.html` — laswerk + technisch support + galerij
+- `index.html` — home (full-screen hero, icon-diensten, kernwaarden, opdrachtgevers)
+- `diensten.html` — gele CTA, tabbladen (laswerk / support / containeropslag) + projectgalerij
 - `contact.html` — gegevens + contactformulier
+
+Footer: 4 kolommen (Over ons, vacatures, contact + iconen, logo’s), gele koppen en knoppen.
 
 ## Lokaal openen
 
@@ -27,9 +29,9 @@ HWTS.EU.HTML/
 ├── contact.html
 ├── css/styles.css
 ├── js/main.js
-└── images/          # hero, logo, diensten, clients, gallery
+└── images/
+    ├── gallery/     # projectfoto’s dienstenpagina
+    └── ...          # hero, logo, clients, overige
 ```
-
-Footer: 4 kolommen (Over ons, vacatures, contact + iconen, HWTS/opslagcontainer-logo’s), gele koppen en knoppen.
 
 Geen database, geen build-step. Uploaden = klaar.
