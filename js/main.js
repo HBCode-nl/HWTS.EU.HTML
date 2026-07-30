@@ -19,16 +19,13 @@
   const hero = document.querySelector(".hero");
   const logoImg = document.querySelector(".logo img");
   if (header && hero && !header.classList.contains("is-solid")) {
-    const logoOnDark = "images/logo.png";
-    const logoOnLight = "images/logo-header.jpg";
+    header.classList.add("is-auto-hide");
+    if (logoImg) logoImg.src = "images/logo-header.jpg";
 
     const onScroll = () => {
-      const solid = window.scrollY > Math.max(80, hero.offsetHeight * 0.55);
-      header.classList.toggle("is-solid", solid);
-      header.classList.toggle("is-fixed", solid);
-      if (logoImg) {
-        logoImg.src = solid ? logoOnLight : logoOnDark;
-      }
+      const show = window.scrollY > 48;
+      header.classList.toggle("is-visible", show);
+      header.classList.toggle("is-solid", show);
     };
 
     onScroll();
