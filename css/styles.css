@@ -278,16 +278,6 @@ p {
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.35);
 }
 
-.service-grid-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media (max-width: 900px) {
-  .service-grid-3 {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Page hero (inner pages) */
 .page-hero {
   position: relative;
