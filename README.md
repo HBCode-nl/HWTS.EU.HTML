@@ -20,6 +20,17 @@ npx --yes serve .
 
 Daarna: http://localhost:3000
 
+## Deploy (Coolify)
+
+Gebruik **Dockerfile** als build pack (niet Nixpacks/static `dist`):
+
+- Branch: `main`
+- Base Directory: `/`
+- Port: `80`
+- Is it a static site?: **Nee** (Dockerfile handelt nginx af)
+
+Nixpacks faalt hier omdat Coolify `/app/dist` verwacht, terwijl dit project geen build-output heeft.
+
 ## Structuur
 
 ```
