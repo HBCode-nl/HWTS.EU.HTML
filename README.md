@@ -6,9 +6,9 @@ Statische HTML-versie van hwts.eu — zelfde inhoud en huisstijl, zonder WordPre
 
 - `index.html` — home (full-screen hero, icon-diensten, kernwaarden, opdrachtgevers)
 - `diensten.html` — gele CTA, tabbladen (laswerk / support) + projectgalerij
-- `contact.html` — hero “Neem Contact Op” + kantoorgegevens met iconen
+- `contact.html` — hero “Neem Contact Op” + kantoorgegevens met iconen (geen openingstijden)
 
-Footer: 3 kolommen — merk + tagline, contact, navigatie (+ “Wij zoeken vakmensen” + gele link) en copyright.
+Footer: 3 kolommen — merk + tagline, contact (telefoon/e-mail/adres), navigatie (+ “Wij zoeken vakmensen” + gele link) en copyright. Opdrachtgeverslogo’s op home in kleur.
 
 ## Lokaal openen
 
